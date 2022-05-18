@@ -12,13 +12,23 @@ class memberController extends Controller
     {
         $rules = array(
             'Name' => "required",
-            'email' => "required|email"
+            'Email' => "required|email",
+            'address' => "required"
         );
         $validato = Validator::make($req->all(), $rules);
         if ($validato->fails()) {
             return $validato->errors();
         } else {
-            return "Ok";
+            $data = new member;
+            $data->Name = $req->Name;
+            $data->Email = $req->Email;
+            $data->address = $req->address;
+            $result = $data->save();
+            if ($result) {
+                return "Data Has Been Validated&Saved";
+            } else {
+                return "Inavlid Data Not Saved";
+            }
         }
     }
     //
