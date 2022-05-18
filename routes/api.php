@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::post('data', [memberControler::class, 'index']);
 Route::put('update', [memberControler::class, 'update']);
+Route::delete('delete/{id}', [memberControler::class, 'delete']);

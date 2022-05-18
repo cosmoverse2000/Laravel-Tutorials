@@ -33,4 +33,15 @@ class memberControler extends Controller
             return "Update failed";
         }
     }
+    function delete($id)
+    {
+        $member = member::find($id);
+
+        $result = $member->delete();
+        if ($result) {
+            return "Delete Success";
+        } else {
+            return "Delete failed";
+        }
+    }
 }
