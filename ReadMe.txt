@@ -110,6 +110,10 @@ class UserController extends Controller
 
 
 👉•Step 11: Test with postman, Result will be below
+Authentication With Sanctum Method Follow All steps in Readme,Goto Postman run created Controller with Post method in routing Give raw data as email & paasword,now token woulld be generated,
+Use this token to fetch data ,apply get method,and go to header->auth &value->'Bearer TOKEN' and get your data
+get link would be
+121:..../api/user
 {
     "user": {
         "id": 1,
