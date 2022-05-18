@@ -44,4 +44,8 @@ class memberControler extends Controller
             return "Delete failed";
         }
     }
+    function search($name)
+    {
+        return member::where('Name', 'like', "%" . $name . "%")->get();
+    }
 }
