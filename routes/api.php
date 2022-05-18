@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('data', [memberControler::class, 'index']);
+Route::put('update', [memberControler::class, 'update']);

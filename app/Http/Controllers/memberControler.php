@@ -20,4 +20,17 @@ class memberControler extends Controller
             return "failed";
         }
     }
+    function update(Request $req)
+    {
+        $member = member::find($req->id);
+        $member->Name = $req->Name;
+        $member->Email = $req->Email;
+        $member->address = $req->address;
+        $result = $member->save();
+        if ($result) {
+            return "Update Success";
+        } else {
+            return "Update failed";
+        }
+    }
 }
