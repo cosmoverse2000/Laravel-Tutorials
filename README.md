@@ -1,4 +1,4 @@
-<h1> TO USE LOGIN SIGNUP FUNCTION YOU MUST OPEN XAMPP SERVER ,AND ALSO CHECK THE NAME OF LOCALSHOST DB IN .ENV FILE </h1>
+<h3>TO USE THE INBUILT LOGIN SIGNUP FUNCTION IN LARVE,INSTALL THIS JET-STREAM,AND YOU MUST OPEN XAMPP SERVER, AND ALSO CHECK THE NAME OF LOCALSHOST DB IN .ENV FILE </h3>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
